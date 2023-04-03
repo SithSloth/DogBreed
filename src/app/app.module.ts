@@ -8,12 +8,14 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BreedListComponent } from './breed-list/breed-list.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
   declarations: [
     BreedListComponent,
-    AppComponent
+    AppComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

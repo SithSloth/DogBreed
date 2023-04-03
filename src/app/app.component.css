@@ -11,7 +11,7 @@ input[type=text], input[type=password] {
   }
   
   /* Set a style for all buttons */
-  button {
+/*   button {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -19,11 +19,11 @@ input[type=text], input[type=password] {
     border: none;
     cursor: pointer;
     width: 100%;
-  }
+  } */
   
-  button:hover {
+  /* button:hover {
     opacity: 0.8;
-  }
+  } */
   
   /* Extra styles for the cancel button */
   .cancelbtn {
@@ -32,23 +32,11 @@ input[type=text], input[type=password] {
     background-color: #f44336;
   }
   
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
   
   .container {
     padding: 16px;
   }
-  
-/*   span.psw {
-    float: right;
-    padding-top: 16px;
-  } */
-  
-  /* The Modal (background) */
+
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -81,12 +69,6 @@ input[type=text], input[type=password] {
     font-weight: bold;
   }
   
-/*   .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  } */
-  
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
@@ -97,3 +79,7 @@ input[type=text], input[type=password] {
        width: 100%;
     }
   }
+
+  #appName {
+    font-size: 75%;
+ }

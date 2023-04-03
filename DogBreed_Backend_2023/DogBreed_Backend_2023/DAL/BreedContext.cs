@@ -22,6 +22,7 @@ namespace DogBreed_Backend_2023.DAL
     public DbSet<Users> Users { get; set; }
     public DbSet<ActivityModel> Activities { get; set; }
     public DbSet<FaveBreeds> Favorites { get; set; }
+    public DbSet<Member> Team { get; set; }
 
 
 
