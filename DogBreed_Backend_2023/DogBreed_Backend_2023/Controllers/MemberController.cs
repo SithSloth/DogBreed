@@ -1,18 +1,18 @@
-using DogBreed_Backend_2023.DAL;
-using DogBreed_Backend_2023.Models;
-using Microsoft.AspNetCore.Mvc;
 
-namespace DogBreed_Backend_2023.Controllers
+using DogBreed_Backend_2023.Models;
+
+namespace DogBreed_Backend_2023.DAL
 {
-  [Route("api/[controller]")]
-  [ApiController]
-  public class MemberController: ControllerBase
+  public class MemberRepository
   {
-    private MemberRepository _repo = new MemberRepository();
-    [HttpPost("add")]
-    public void addMember(Member member)
+    private BreedContext _Db = new BreedContext();
+
+    public void AddMember(Member member)
     {
-      _repo.AddMember(member);
+      _Db.Team.Add(member);
+      _Db.SaveChanges();
     }
   }
 }
+
+// transferred
